@@ -21,7 +21,17 @@
 <p> ${param.data} </p>
 
 <!-- 리턴값 여러개일때 배열로 받기 -->
-<% String[] chk=request.getParameterValues("chk"); %>
+<% 
+	String[] chk=request.getParameterValues("chk"); 
+	if(chk!=null) {
+		for(String sn : chk)
+			out.print("<p>" + sn + "</p>");
+	}
+%>
+<p>${paramValues.chk[0]}</p>
+<p>${paramValues.chk[1]}</p>
+<p>${paramValues.chk[2]}</p>
+
 
 </body>
 </html>
