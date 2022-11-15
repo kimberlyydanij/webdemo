@@ -37,5 +37,11 @@
 	<!-- 10,000.00 -->
 	<fmt:formatNumber value="${num1}" pattern="0,000.00" />
 </p> 
+
+<p>
+	<!-- $10,000 -->
+	<fmt:formatNumber value="${num1}" currencySymbol="$" type="currency" />
+</p> 
+
 </body>
 </html>
