@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 //http://localhost:8090/webdemo/empList
 
-@WebServlet("/empList")
+@WebServlet("/sessionempList")
 public class EmployeesController extends HttpServlet {
 	
 	@Override
